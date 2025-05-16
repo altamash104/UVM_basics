@@ -12,6 +12,8 @@ This allows any ongoing transactions or processes to finish naturally before the
 Drain time is useful when you want to allow ongoing transactions or tasks to finish after the last objection has been dropped in a phase.
 It provides a buffer time to avoid abruptly stopping ongoing processes, which might still need to complete.
 
+syntax: phase.phase_done.set_drain_time(this,100);//it is the additiona; time for which simulation will run even if all the phases are dropped.
+
 Summary : Timeout: Prevents the simulation from running indefinitely by stopping it if it exceeds a certain time, 
 $finish is use to manually stop simulation as and when required, 
 Drain time is use to wait for some time after the last objection is dropped in UVM phases to cleanly processed last stimulus.*/
